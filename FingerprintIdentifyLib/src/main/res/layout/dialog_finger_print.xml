@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_round_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="16.5dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="请验证指纹用于登陆"
+        android:textColor="#333333"
+        android:textSize="16dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.wei.android.lib.fingerprintidentify.customtab.FingerPrinterView
+            android:id="@+id/finger_printer_view"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="#D9D9D9"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#BBBBBB"
+            android:textSize="16dp"/>
+    </LinearLayout>
+</LinearLayout>
