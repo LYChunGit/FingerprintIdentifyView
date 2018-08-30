@@ -1,7 +1,7 @@
 # FingerprintIdentifyView
 这是一个用于指纹支付或者指纹登录的控件
 
-###使用
+使用
 * 1、导入 compile 'me.lyc.FingerprintIdentify:FingerprintIdentifyLib:1.0.0'
 * 2、使用
 ```java 
@@ -31,6 +31,7 @@
 ```
 * 3、记得在onPause()和onDestroy()销毁
 ```java 
+    @Override
     protected void onPause() {
         super.onPause();
         if (fingerprintIdentifyView!=null){
@@ -38,6 +39,8 @@
             fingerprintIdentifyView.fingerprintIdentifyClose();
         }
     }
+    
+    @Override
     protected void onDestroy() {
         super.onDestroy();
         if (fingerprintIdentifyView!=null){
@@ -46,6 +49,6 @@
         }
     }
 ```
-###此库集成了com.wei.android.lib:fingerprintidentify
+此库集成了com.wei.android.lib:fingerprintidentify
 
 
