@@ -1,5 +1,6 @@
 # FingerprintIdentifyView
 这是一个用于指纹支付或者指纹登录的控件
+
 ###使用
 * 1、导入 compile 'me.lyc.FingerprintIdentify:FingerprintIdentifyLib:1.0.0'
 * 2、使用
